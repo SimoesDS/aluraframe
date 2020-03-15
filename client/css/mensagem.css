@@ -1,3 +1,42 @@
-.mensagem-notificacao {
+@keyframes bounce {
+    0%, 14.28%, 42.85%, 71.42%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    28.57% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
     
+    57.14% {
+        -webkit-transform: translateY(-13px);
+        transform: translateY(-13px);
+    }
+
+    85.71% {
+        -webkit-transform: translateY(-7px);
+        transform: translateY(-7px);
+    }
+}
+
+.mensagem-notificacao {
+    width: auto;
+    padding: 15px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-image: -webkit-linear-gradient(top, #d9edf7 0%, #b9def0 100%);
+    border-color: #bce8f1;
+    color: #31708f;
+    text-align: center;
+}
+
+.container-mensagem {
+    margin: auto;
+    width: fit-content;
+    transition: 2s;
+}
+
+.container-mensagem:hover {
+    animation: bounce 1s;
 }
